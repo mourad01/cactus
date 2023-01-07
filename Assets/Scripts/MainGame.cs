@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -23,6 +24,8 @@ public class MainGame : MonoBehaviour
     [Header("UISetting")]
     public UI UISettings;
 
+    public UnityAction InterstitialClosed { get; private set; }
+
     private void Awake()
     {
         Instance = this;
@@ -31,6 +34,8 @@ public class MainGame : MonoBehaviour
     }
     private void Start()
     {
+        Advertisements.Instance.Initialize();
+
         AdManager.Instance.Request();
     }
     private void ManageCharacter()
@@ -73,7 +78,12 @@ public class MainGame : MonoBehaviour
     }
     public void LoadScene(string Name)
     {
-        AdManager.Instance.ShowInterstitial();
+       if (Advertisements.Instance.IsInterstitialAvailable())
+        {
+            Advertisements.Instance.ShowInterstitial(InterstitialClosed);
+            UISettings.Panel_LoadingScreen.SetActive(true);
+            StartCoroutine(LoadYourAsyncScene(0.25f, Name));
+        }
         UISettings.Panel_LoadingScreen.SetActive(true);
         StartCoroutine(LoadYourAsyncScene(0.25f, Name));
     }

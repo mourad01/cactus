@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class AdManager : MonoBehaviour
@@ -41,8 +42,12 @@ public class AdManager : MonoBehaviour
 
     public static AdManager Instance;
 
+    public UnityAction InterstitialClosed { get; private set; }
+
     private void Awake()
     {
+        Advertisements.Instance.Initialize();
+
         if (Instance != this)
         {
             Instance = this;
@@ -64,7 +69,9 @@ public class AdManager : MonoBehaviour
         // Initialize the Google Mobile Ads SDK.
         MobileAds.Initialize(initStatus => { });
 
-        RequestBanner();
+        //RequestBanner();
+        Advertisements.Instance.ShowBanner(BannerPosition.TOP);
+
         RequestInterstitial();
         RequestRewardVideo();
     }
@@ -159,15 +166,14 @@ public class AdManager : MonoBehaviour
     {
         if (ShowAds)
         {
-            if (Interstitial.IsLoaded())
+            if (Advertisements.Instance.IsInterstitialAvailable())
             {
                 StopAllCoroutines();
-                Interstitial.Show();
+                Advertisements.Instance.ShowInterstitial(InterstitialClosed);
+
+
             }
-            else
-            {
-                RequestInterstitial();
-            }
+           
         }
     }
     public void HandleInterstitialOnAdLoaded(object sender, EventArgs args)
