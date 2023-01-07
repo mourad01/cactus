@@ -83,9 +83,11 @@ public class MainGame : MonoBehaviour
             Advertisements.Instance.ShowInterstitial(InterstitialClosed);
             UISettings.Panel_LoadingScreen.SetActive(true);
             StartCoroutine(LoadYourAsyncScene(0.25f, Name));
+            Debug.Log("1");
         }
         UISettings.Panel_LoadingScreen.SetActive(true);
         StartCoroutine(LoadYourAsyncScene(0.25f, Name));
+        Debug.Log("2");
     }
     private IEnumerator LoadYourAsyncScene(float Timer, string Name)
     {

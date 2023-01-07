@@ -71,7 +71,7 @@ public class AdManager : MonoBehaviour
         MobileAds.Initialize(initStatus => { });
 
         //RequestBanner();
-        Advertisements.Instance.ShowBanner(BannerPosition.TOP);
+        Advertisements.Instance.ShowBanner(BannerPosition.TOP, BannerType.Banner);
 
         RequestInterstitial();
         RequestRewardVideo();

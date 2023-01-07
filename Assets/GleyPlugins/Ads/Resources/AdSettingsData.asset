@@ -25,9 +25,9 @@ MonoBehaviour:
       weightWindows: 1
     interstitialSettings:
       adType: 2
-      orderAndroid: 1
-      orderiOS: 1
-      orderWindows: 1
+      orderAndroid: 2
+      orderiOS: 2
+      orderWindows: 2
       weightAndroid: 1
       weightiOS: 1
       weightWindows: 1
@@ -39,6 +39,32 @@ MonoBehaviour:
       weightAndroid: 1
       weightiOS: 1
       weightWindows: 1
+  - advertiser: 6
+    advertiserName: AppLovin
+    bannerSettings:
+      adType: 1
+      orderAndroid: 2
+      orderiOS: 2
+      orderWindows: 2
+      weightAndroid: 0
+      weightiOS: 0
+      weightWindows: 0
+    interstitialSettings:
+      adType: 2
+      orderAndroid: 1
+      orderiOS: 1
+      orderWindows: 1
+      weightAndroid: 0
+      weightiOS: 0
+      weightWindows: 0
+    rewardedSettings:
+      adType: 3
+      orderAndroid: 2
+      orderiOS: 2
+      orderWindows: 2
+      weightAndroid: 0
+      weightiOS: 0
+      weightWindows: 0
   advertiserSettings:
   - advertiser: 2
     useSDK: 0
@@ -357,26 +383,26 @@ MonoBehaviour:
       hasRewarded: 1
       directedForChildren: 0
   - advertiser: 6
-    useSDK: 0
+    useSDK: 1
     preprocessorDirective: USE_APPLOVIN
     sdkLink: https://dash.applovin.com/documentation/mediation/unity/getting-started/integration
     platformSettings:
     - platform: 0
-      enabled: 0
+      enabled: 1
       appId:
-        id: 
+        id: zEt4_M4PkG_cNWU_sR4p4RXZ6mE5AO4RAx8SQs1BVTZR5iMfLP54K_p1L4C6x88exH8F__Tr3QQ0TgrAyzCiPq
         displayName: SDK key
         notRequired: 0
       idBanner:
-        id: 
+        id: 1125457
         displayName: Banner ID
         notRequired: 0
       idInterstitial:
-        id: 
+        id: 45757575
         displayName: Interstitial ID
         notRequired: 0
       idRewarded:
-        id: 
+        id: 75786586
         displayName: Rewarded Video ID
         notRequired: 0
       hasBanner: 1
