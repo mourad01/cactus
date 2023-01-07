@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 01d9bbcb9efcdc248b8c3963e19ca2a7
+  - enabled: 1
+    path: Assets/Scenes/MainRoom.unity
+    guid: c604dd55045d3504f92818dec133bd0f
+  - enabled: 1
+    path: Assets/Scenes/BathRoom.unity
+    guid: 41ee051f87f49a64c8ff531ef1b250cd
+  - enabled: 1
+    path: Assets/Scenes/BedRoom.unity
+    guid: 28115fc8b63685a4883731a259b24587
+  - enabled: 1
+    path: Assets/Scenes/MiniGame.unity
+    guid: 19d051c5e79303d4aa7c5275e2ac66ac
+  - enabled: 1
+    path: Assets/Scenes/Gym.unity
+    guid: 234624f03cbc7d941a729e209150dced
+  m_configObjects: {}
