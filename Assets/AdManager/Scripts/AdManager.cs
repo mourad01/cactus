@@ -43,6 +43,7 @@ public class AdManager : MonoBehaviour
     public static AdManager Instance;
 
     public UnityAction InterstitialClosed { get; private set; }
+    public UnityAction<bool> CompleteMethod { get; private set; }
 
     private void Awake()
     {
@@ -234,14 +235,15 @@ public class AdManager : MonoBehaviour
     }
     public void ShowRewardVideo()
     {
-        if (RewardVideo.IsLoaded())
+        if (Advertisements.Instance.IsRewardVideoAvailable())
         {
             StopAllCoroutines();
-            RewardVideo.Show();
+            Advertisements.Instance.ShowRewardedVideo(CompleteMethod);
+
         }
         else
         {
-            RequestRewardVideo();
+            Advertisements.Instance.ShowRewardedVideo(CompleteMethod);
         }
     }
     public void HandleRewardedAdLoaded(object sender, EventArgs args)

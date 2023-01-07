@@ -165,7 +165,7 @@ PlayerSettings:
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 8
   AndroidMinSdkVersion: 22
-  AndroidTargetSdkVersion: 31
+  AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   stripEngineCode: 1
@@ -811,9 +811,9 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    Android: USE_ADMOB;USE_ADMOB_PATCH
+    Android: USE_ADMOB;USE_ADMOB_PATCH;gameanalytics_admob_enabled
     Windows Store Apps: 
-    iPhone: USE_ADMOB_PATCH
+    iPhone: USE_ADMOB_PATCH;gameanalytics_admob_enabled
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -910,11 +910,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 0789630f-3588-45fa-a84c-b0fc59a9c4af
+  cloudProjectId: 335a1a77-7fb4-456c-8e7d-cb024f995c4c
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Taling Cactus Care (5)
-  organizationId: vooman
+  projectName: Talking Cactus Care
+  organizationId: mouradouchi
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
