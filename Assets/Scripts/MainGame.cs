@@ -78,13 +78,13 @@ public class MainGame : MonoBehaviour
     }
     public void LoadScene(string Name)
     {
-       if (Advertisements.Instance.IsInterstitialAvailable())
+        if (Advertisements.Instance.IsInterstitialAvailable())
         {
+
             Advertisements.Instance.ShowInterstitial(InterstitialClosed);
-            UISettings.Panel_LoadingScreen.SetActive(true);
-            StartCoroutine(LoadYourAsyncScene(0.25f, Name));
             Debug.Log("1");
         }
+       
         UISettings.Panel_LoadingScreen.SetActive(true);
         StartCoroutine(LoadYourAsyncScene(0.25f, Name));
         Debug.Log("2");
