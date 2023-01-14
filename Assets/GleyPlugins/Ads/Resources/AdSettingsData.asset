@@ -25,9 +25,9 @@ MonoBehaviour:
       weightWindows: 1
     interstitialSettings:
       adType: 2
-      orderAndroid: 2
-      orderiOS: 2
-      orderWindows: 2
+      orderAndroid: 1
+      orderiOS: 1
+      orderWindows: 1
       weightAndroid: 1
       weightiOS: 1
       weightWindows: 1
@@ -51,9 +51,9 @@ MonoBehaviour:
       weightWindows: 0
     interstitialSettings:
       adType: 2
-      orderAndroid: 1
-      orderiOS: 1
-      orderWindows: 1
+      orderAndroid: 2
+      orderiOS: 2
+      orderWindows: 2
       weightAndroid: 0
       weightiOS: 0
       weightWindows: 0
@@ -123,15 +123,15 @@ MonoBehaviour:
     - platform: 0
       enabled: 1
       appId:
-        id: ca-app-pub-9403420173062898~7249208825
+        id: ca-app-pub-1391887607856556~7752865922
         displayName: App ID
         notRequired: 0
       idBanner:
-        id: ca-app-pub-9403420173062898/2806995383
+        id: 'ca-app-pub-1391887607856556/6056640876 '
         displayName: Banner ID
         notRequired: 0
       idInterstitial:
-        id: ca-app-pub-9403420173062898/3141219065
+        id: 'ca-app-pub-1391887607856556/1325374163 '
         displayName: Interstitial ID
         notRequired: 0
       idRewarded:
@@ -390,19 +390,19 @@ MonoBehaviour:
     - platform: 0
       enabled: 1
       appId:
-        id: zEt4_M4PkG_cNWU_sR4p4RXZ6mE5AO4RAx8SQs1BVTZR5iMfLP54K_p1L4C6x88exH8F__Tr3QQ0TgrAyzCiPq
+        id: TEd19RO2OT56nvaUFqLGLEym03Dl3qs-9eM0PxSt_PEHA99mTSXC5U3dPU912d9De4CNSmy861IvCBgdueT-_5
         displayName: SDK key
         notRequired: 0
       idBanner:
-        id: 1125457
+        id: bc59bed137733dec
         displayName: Banner ID
         notRequired: 0
       idInterstitial:
-        id: 45757575
+        id: b76b283cd8071633
         displayName: Interstitial ID
         notRequired: 0
       idRewarded:
-        id: 75786586
+        id: 454855485
         displayName: Rewarded Video ID
         notRequired: 0
       hasBanner: 1
