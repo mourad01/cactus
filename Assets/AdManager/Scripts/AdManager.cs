@@ -47,11 +47,12 @@ public class AdManager : MonoBehaviour
 
     private void Awake()
     {
-        Advertisements.Instance.Initialize();
+        
 
         if (Instance != this)
         {
             Instance = this;
+		Advertisements.Instance.Initialize();
             DontDestroyOnLoad(gameObject);
         }
         else

@@ -48,7 +48,7 @@ MonoBehaviour:
   GameName: Talking Cactus Care
   OrganizationName: ouaz game
   OrganizationIdentifier: ouaz
-  EmailGA: mourad.ouchitachen2@gmail.com
+  EmailGA: tredyapp1@gmail.
   IntroScreen: 0
   InfoLogEditor: 1
   InfoLogBuild: 1
@@ -63,7 +63,7 @@ MonoBehaviour:
   ResourceCurrencies: []
   LastCreatedGamePlatform: -1
   Platforms: 0b000000
-  CurrentInspectorState: 1
+  CurrentInspectorState: 0
   ClosedHints: 
   DisplayHints: 0
   DisplayHintsScrollState: {x: 0, y: 0}

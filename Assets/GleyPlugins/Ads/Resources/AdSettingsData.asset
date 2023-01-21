@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AdSettingsData
   m_EditorClassIdentifier: 
   mediationSettings:
-  - advertiser: 0
-    advertiserName: Admob
+  - advertiser: 6
+    advertiserName: AppLovin
     bannerSettings:
       adType: 1
       orderAndroid: 1
@@ -39,8 +39,8 @@ MonoBehaviour:
       weightAndroid: 1
       weightiOS: 1
       weightWindows: 1
-  - advertiser: 6
-    advertiserName: AppLovin
+  - advertiser: 0
+    advertiserName: Admob
     bannerSettings:
       adType: 1
       orderAndroid: 2
@@ -121,7 +121,7 @@ MonoBehaviour:
     sdkLink: https://github.com/googleads/googleads-mobile-unity/releases
     platformSettings:
     - platform: 0
-      enabled: 1
+      enabled: 0
       appId:
         id: ca-app-pub-1391887607856556~7752865922
         displayName: App ID
@@ -143,21 +143,21 @@ MonoBehaviour:
       hasRewarded: 1
       directedForChildren: 0
     - platform: 1
-      enabled: 0
+      enabled: 1
       appId:
-        id: 
+        id: ca-app-pub-1391887607856556~7752865922
         displayName: App ID
         notRequired: 0
       idBanner:
-        id: 
+        id: ca-app-pub-1391887607856556/6056640876
         displayName: Banner ID
         notRequired: 0
       idInterstitial:
-        id: 
+        id: ca-app-pub-1391887607856556/1325374163
         displayName: Interstitial ID
         notRequired: 0
       idRewarded:
-        id: 
+        id: ca-app-pub-9403420173062898/7157303933
         displayName: Rewarded Video ID
         notRequired: 0
       hasBanner: 1
@@ -388,7 +388,7 @@ MonoBehaviour:
     sdkLink: https://dash.applovin.com/documentation/mediation/unity/getting-started/integration
     platformSettings:
     - platform: 0
-      enabled: 1
+      enabled: 0
       appId:
         id: TEd19RO2OT56nvaUFqLGLEym03Dl3qs-9eM0PxSt_PEHA99mTSXC5U3dPU912d9De4CNSmy861IvCBgdueT-_5
         displayName: SDK key
@@ -402,7 +402,7 @@ MonoBehaviour:
         displayName: Interstitial ID
         notRequired: 0
       idRewarded:
-        id: 454855485
+        id: 
         displayName: Rewarded Video ID
         notRequired: 0
       hasBanner: 1
@@ -410,17 +410,17 @@ MonoBehaviour:
       hasRewarded: 1
       directedForChildren: 0
     - platform: 1
-      enabled: 0
+      enabled: 1
       appId:
-        id: 
+        id: TEd19RO2OT56nvaUFqLGLEym03Dl3qs-9eM0PxSt_PEHA99mTSXC5U3dPU912d9De4CNSmy861IvCBgdueT-_5
         displayName: SDK key
         notRequired: 0
       idBanner:
-        id: 
+        id: bc59bed137733dec
         displayName: Banner ID
         notRequired: 0
       idInterstitial:
-        id: 
+        id: b76b283cd8071633
         displayName: Interstitial ID
         notRequired: 0
       idRewarded:
